@@ -1,0 +1,44 @@
+/* MovieList.css */
+.movie-list {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent movies from wrapping to the next line */
+    overflow-x: auto; /* Enable horizontal scrolling if necessary */
+    margin: 0 -10px; /* To account for margin spacing of MovieCard */
+  }
+  
+  .movie-card {
+    width: 250px;
+    background-color: #c4d624;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+  .movie-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .movie-card h2 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  .movie-card p {
+    font-size: 0.9rem;
+    margin: 10px 0;
+  }
+  
+  .movie-card p.rating {
+    font-weight: bold;
+    color: #030303;
+  }
+  
+  .movie-card:hover {
+    transform: scale(1.05);
+  }
+  
